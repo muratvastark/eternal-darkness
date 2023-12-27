@@ -1,0 +1,494 @@
+{
+    "BOT": {
+        "TOKEN": "",
+        "GUILD_ID": "1179030409732964444",
+        "PREFIXES": [
+            "."
+        ],
+        "BOT_OWNERS": [
+            "1158378706444767232",
+            "1158396365701910588",
+            "1001025106795057202"
+        ],
+        "MONGO_URL": "",
+        "STATUS": "Cofteey & Muratva Stark"
+    },
+    "SERVER": {
+        "TAGGED_SERVER": false,
+        "TAG": "",
+        "UNTAGGED_TAG": "",
+        "GIVEAWAY_ROLE": "1179899613591912459",
+        "EVENT_ROLE": "1179899616125263922",
+        "PUBLIC_CATEGORY": "1179412197768695948",
+        "SOLVING_AUTH_ROLE": "1179568324867268608",
+        "TRANSPORT_AUTH": [
+            "1179554144130969713",
+            "1179403561747095552",
+            "1179554128347803669",
+            "1179554153362628669"
+        ],
+        "STREAM_ROLE": "1179554137768202290",
+        "STREAM_CATEGORY": "1179805041767493794",
+        "BOT_COMMAND_ROLE": "1179554150351122432",
+        "MAN_ROLES": [
+            "1179388067648380968"
+        ],
+        "WOMAN_ROLES": [
+            "1179388069007343637"
+        ],
+        "TEAM_ROLES": [
+            "1181066376832614441",
+            "1181066412219961394",
+            "1181066398886277161",
+            "1181066404619882586"
+        ],
+        "LOVE_ROLES": [
+            "1179900000923308093",
+            "1179900002055770232",
+            "1179900003121106984"
+        ],
+        "GAME_ROLES": [
+            "1181067563153764422",
+            "1181067571731116072",
+            "1181068338420535297",
+            "1181068364710432768",
+            "1181068347945779200",
+            "1181068371584876594",
+            "1181068355164192778",
+            "1181068377020715119",
+            "1181068381756072096"
+        ],
+        "ZODIAC_ROLES": [
+            "1181066376832614441",
+            "1181066412219961394",
+            "1181066398886277161",
+            "1181066404619882586"
+        ],
+        "COLOR_ROLES": [
+            "1179571598349570178",
+            "1184299018747134054",
+            "1179572643603677265",
+            "1179572639577157632",
+            "1179571599742095521",
+            "1179572636523696178",
+            "1179891490353328199"
+        ],
+        "REGISTERED_ROLE": "",
+        "FAMILY_ROLE": "",
+        "CHAT_CHANNEL": "1179030410487930912",
+        "ROLE_ADD_MAX_ROLE": "1179152168834564096",
+        "OWNER_ROLE": "1179030512573091930",
+        "UNREGISTER_ROLE": "1179411878628306964",
+        "SUSPECT_ROLE": "1179571588014817300",
+        "JOINED_ROLE": "1179900920524443830",
+        "MAX_MUTE_PUNISHMENTS": [
+            {
+                "COUNT": 50,
+                "TIME": "7d",
+                "CLEAR": true
+            }
+        ],
+        "ROLE_COMMANDS": [
+            {
+                "USAGES": [
+                    "streamer"
+                ],
+                "AUTH": [
+                    "1179568363517780038",
+                    "1179566362889310318"
+                ],
+                "ROLES": [
+                    "1179554137768202290"
+                ]
+            },
+            {
+                "USAGES": [
+                    "special"
+                ],
+                "AUTH": [],
+                "ROLES": [
+                    "1179554136505724928"
+                ]
+            },
+            {
+                "USAGES": [
+                    "cam",
+                    "camera",
+                    "kamera"
+                ],
+                "AUTH": [
+                    "1183194166583378001"
+                ],
+                "ROLES": [
+                    "1183448040737099969"
+                ]
+            }
+        ],
+        "PUNISMENT_COMMANDS": [
+            {
+                "USAGES": [
+                    "dcceza"
+                ],
+                "AUTH": [
+                    "1179566329808830474",
+                    "1179568331242610749"
+                ],
+                "ROLE": "1179571592272027709",
+                "CHANNEL": "dc-ceza-log",
+                "TYPE": 5,
+                "NAME": "doğruluk cesaret"
+            },
+            {
+                "USAGES": [
+                    "strceza"
+                ],
+                "AUTH": [
+                    "1179568363517780038",
+                    "1179566362889310318"
+                ],
+                "ROLE": "1179892310201340014",
+                "CHANNEL": "streamer-ceza-log",
+                "TYPE": 5,
+                "NAME": "streamer"
+            },
+            {
+                "USAGES": [
+                    "terapiceza"
+                ],
+                "AUTH": [
+                    "1179566371961569340",
+                    "1179568347420041406"
+                ],
+                "ROLE": "1179571595149328474",
+                "CHANNEL": "terapi-ceza-log",
+                "TYPE": 5,
+                "NAME": "terapi"
+            },
+            {
+                "USAGES": [
+                    "funceza"
+                ],
+                "AUTH": [
+                    "1179566329808830474",
+                    "1179568331242610749"
+                ],
+                "ROLE": "1179571593735831623",
+                "CHANNEL": "fun-ceza-log",
+                "TYPE": 5,
+                "NAME": "fun"
+            }
+        ],
+        "PENALS": {
+            "QUARANTINE": {
+                "POINT": 0,
+                "ROLE": "1179571588014817300",
+                "REASONS": [
+                    {
+                        "TITLE": "Sunucuyu kötülemek.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Mikrofon-kulaklık hatasını kullanmak.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Public odalara müzik botu çekmek.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Kamera açılan odalarda fake kamera açmak.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "3 kez gir çık.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Rahatsızlık vermek oda takibi.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Sorun çözme troll veya küfür.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Dini ve milli değerlerle dalga geçmek.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Boost'u kötüye kullanma.",
+                        "DESCRIPTION": "Ceza Süresi: 1 gün",
+                        "TIME": "1d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Abartılı şekilde şiddet içerikli tehdit söylemi.",
+                        "DESCRIPTION": "Ceza Süresi: 7 gün",
+                        "TIME": "7d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Cinsel taciz.",
+                        "DESCRIPTION": "Ceza Süresi: 7 gün",
+                        "TIME": "7d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Dini ve milli değerlere küfür.",
+                        "DESCRIPTION": "Ceza Süresi: 7 gün",
+                        "TIME": "7d",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Terör propagandası yapmak.",
+                        "DESCRIPTION": "Ceza Süresi: 7 gün",
+                        "TIME": "7d",
+                        "NEED_TYPE": "NONE"
+                    }
+                ],
+                "AUTH": [
+                    "1179403564196577301",
+                    "1179554125898330226",
+                    "1179554128347803669",
+                    "1179554144130969713",
+                    "1179403561747095552",
+                    "1179030512573091930"
+                ]
+            },
+            "UNDERWORLD": {
+                "POINT": 0,
+                "ROLE": "1179571587008184361",
+                "REASONS": [
+                    {
+                        "TITLE": "DM'den reklam yapmak.",
+                        "DESCRIPTION": "Ceza Süresi: 3 ay",
+                        "TIME": "12w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Dini ve milli değerlere küfür etmek.",
+                        "DESCRIPTION": "Ceza Süresi: 1 ay",
+                        "TIME": "4w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Gereksiz yetki kullanımı.",
+                        "DESCRIPTION": "Ceza Süresi: 2 Ay",
+                        "TIME": "8w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Sahte görüntü veya yan hesap bulundurma.",
+                        "DESCRIPTION": "Ceza Süresi: 1 yıl",
+                        "TIME": "52w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "İfşa, taciz ve tehdit.",
+                        "DESCRIPTION": "Ceza Süresi: 1 yıl",
+                        "TIME": "52w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Kişisel bilgi ve +18 paylaşım.",
+                        "DESCRIPTION": "Ceza Süresi: 1 yıl",
+                        "TIME": "52w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "15 yaş ve altı yaşa sahip olmak.",
+                        "DESCRIPTION": "Ceza Süresi: 1 yıl",
+                        "TIME": "52w",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Sesli olarak reklam yapmak",
+                        "DESCRIPTION": "Ceza Süresi: 6 ay",
+                        "TIME": "24w",
+                        "NEED_TYPE": "NONE"
+                    }
+                ],
+                "AUTH": [
+                    "1179554144130969713",
+                    "1179403561747095552",
+                    "1179030512573091930"
+                ]
+            },
+            "CHAT_MUTE": {
+                "POINT": 0,
+                "ROLE": "1179411876535357562",
+                "REASONS": [
+                    {
+                        "TITLE": "Ailevi değerlere küfürler.",
+                        "DESCRIPTION": "Ceza Süresi: 15 Dakika",
+                        "TIME": "15m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Yabancı dillerde konuşmak.",
+                        "DESCRIPTION": "Ceza Süresi: 10 Dakika",
+                        "TIME": "10m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Küfür, hakaret söylemi, kışkırtma.",
+                        "DESCRIPTION": "Ceza Süresi: 10 Dakika",
+                        "TIME": "10m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Metin kanallarının amacı dışında kullanımı.",
+                        "DESCRIPTION": "Ceza Süresi: 10 Dakika",
+                        "TIME": "10m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Chatte flood ve spam yapmak, capslock açık yazı yazmak.",
+                        "DESCRIPTION": "Ceza Süresi: 10 Dakika",
+                        "TIME": "10m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Siyasi tartışmalar yapmak.",
+                        "DESCRIPTION": "Ceza Süresi: 30 Dakika",
+                        "TIME": "30m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Sunucu ismi vermek.",
+                        "DESCRIPTION": "Ceza Süresi: 30 Dakika",
+                        "TIME": "30m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Cinsellik, çıplaklık içeren fotoğraf paylaşımı.",
+                        "DESCRIPTION": "Ceza Süresi: 60 Dakika",
+                        "TIME": "60m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Dini ve milli değerlerle dalga geçmek, topluma küfür, ırkçılık.",
+                        "DESCRIPTION": "Ceza Süresi: 60 Dakika",
+                        "TIME": "60",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Herkese açık metin kanallarında cinsellik içeren konuşmalar veya benzetmeler yapmalar.",
+                        "DESCRIPTION": "Ceza Süresi: 60 Dakika",
+                        "TIME": "60m",
+                        "NEED_TYPE": "NONE"
+                    }
+                ],
+                "AUTH": [
+                    "1179411872965984357",
+                    "1179411875574853692",
+                    "1179152168834564096",
+                    "1179411874513698846",
+                    "1179411871854510120",
+                    "1179411870797529218",
+                    "1179411869845438565",
+                    "1179554153362628669",
+                    "1179554128347803669",
+                    "1179554144130969713",
+                    "1179403561747095552",
+                    "1179030512573091930"
+                ]
+            },
+            "VOICE_MUTE": {
+                "POINT": 0,
+                "ROLE": "1179411877567148102",
+                "REASONS": [
+                    {
+                        "TITLE": "Ailevi değerlere küfürler.",
+                        "DESCRIPTION": "Ceza Süresi: 15 Dakika",
+                        "TIME": "15m",
+                        "NEED_TYPE": "NONE"
+                    },
+                    {
+                        "TITLE": "Bas açıp sövmek, Soundpadden küfür.",
+                        "DESCRIPTION": "Ceza Süresi: 20 Dakika",
+                        "TIME": "20m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Yabancı dillerde konuşmak.",
+                        "DESCRIPTION": "Ceza Süresi: 10 Dakika",
+                        "TIME": "10m",
+                        "NEED_TYPE": "IMAGE"
+                    },
+                    {
+                        "TITLE": "Küfür, hakaret söylemi, kışkırtma.",
+                        "DESCRIPTION": "Ceza Süresi: 10 Dakika",
+                        "TIME": "10m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Siyasi tartışmalar yapmak.",
+                        "DESCRIPTION": "Ceza Süresi: 30 Dakika",
+                        "TIME": "30m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Sunucu ismi vermek.",
+                        "DESCRIPTION": "Ceza Süresi: 30 Dakika",
+                        "TIME": "30m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Özeli veya kişisel sorunları sunucuya yansıtmak.",
+                        "DESCRIPTION": "Ceza Süresi: 30 Dakika",
+                        "TIME": "30m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Secret ve game odalarına izinsiz girmek, uyarıya rağmen çıkmamak, odayı trollemek, küfür etmek.",
+                        "DESCRIPTION": "Ceza Süresi: 30 Dakika",
+                        "TIME": "30m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Dini ve milli değerler ile dalga geçmek, topluma küfür, ırkçılık.",
+                        "DESCRIPTION": "Ceza Süresi: 60 Dakika",
+                        "TIME": "60m",
+                        "NEED_TYPE": "USER"
+                    },
+                    {
+                        "TITLE": "Herkese açık ses kanallarında cinsellik içeren konuşmalar veya benzetmeler yapmalar.",
+                        "DESCRIPTION": "Ceza Süresi: 60 Dakika",
+                        "TIME": "60m",
+                        "NEED_TYPE": "USER"
+                    }
+                ],
+                "AUTH": [
+                    "1179411875574853692",
+                    "1179152168834564096",
+                    "1179411874513698846",
+                    "1179411871854510120",
+                    "1179411870797529218",
+                    "1179411869845438565",
+                    "1179554153362628669",
+                    "1179554128347803669",
+                    "1179554144130969713",
+                    "1179403561747095552",
+                    "1179030512573091930"
+                ]
+            }
+        }
+    }
+}

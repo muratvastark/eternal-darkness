@@ -1,0 +1,46 @@
+{
+    "BOT": {
+        "TOKEN": "",
+        "GUILD_ID": "1179030409732964444",
+        "PREFIXES": ["."],
+        "BOT_OWNERS": ["1158396365701910588","1158378706444767232"],
+        "MONGO_URL": "",
+        "STATUS": "Cofteey & Muratva Stark"
+    },
+    "SERVER": {
+        "TAGGED_SERVER": false,
+        "AUTO_REGISTER": true,
+        "SUSPECT_ROLE": "1179571588014817300",
+        "BOT_COMMAND_ROLE": "1179554150351122432",
+        "FAMILY_ROLE": "",
+        "REGISTER_CHANNEL": "1179881462682615890",
+        "BANNED_TAGS": [],
+        "BANNED_TAG_ROLE": "1179571589537337354",
+        "VIP_ROLE": "1179554136505724928",
+        "TAG": "",
+        "UNREGISTER_ROLE": "1179411878628306964",
+        "UNDERWORLD_ROLE": "1179571587008184361",
+        "QUARANTINE_ROLE": "1179571588014817300",
+        "VOICE_MUTE_ROLE": "1179411877567148102",
+        "CHAT_MUTE_ROLE": "1179411876535357562",
+        "UNTAGGED_TAG": "",
+        "MAN_ROLES": ["1179388067648380968"],
+        "WOMAN_ROLES": ["1179388069007343637"],
+        "REGISTERED_ROLE": "",
+        "MONTHLY_ROLES": [
+            { "TIME": "1y", "ROLE": "1179900005461532672" },
+            { "TIME": "36w", "ROLE": "1179900006510104618" },
+            { "TIME": "24w", "ROLE": "1179900119479484417" },
+            { "TIME": "12w", "ROLE": "1179900120796512336" },
+            { "TIME": "4w", "ROLE": "1179900121849270394" }
+        ],
+        "PUNISMENT_COMMANDS": [
+            {
+                "ROLE": "",
+                "CHANNEL": "",
+                "TYPE": 0,
+                "NAME": ""
+            }
+        ]
+    }
+}

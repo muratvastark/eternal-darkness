@@ -1,0 +1,377 @@
+{
+    "BOT": {
+        "TOKEN": "",
+        "GUILD_ID": "1179030409732964444",
+        "PREFIXES": ["."],
+        "BOT_OWNERS": ["1158396365701910588", "1158378706444767232"],
+        "MONGO_URL": "",
+        "STATUS": "Cofteey & Muratva Stark"
+    },
+    "SERVER": {
+        "MIN_STAFF_ROLE": "1180581827124154580",
+        "CHAT_ADMIN_POINT": 2,
+        "CHAT_CHANNEL": "1180836843659460658",
+        "CHAT_ADMIN_ROLE": "1179568335713730570",
+        "OTHER_POINT": 4,
+        "CHAT_POINT": 1,
+        "SLEEP_ROOM": "1179535471035031552",
+        "PUBLIC_CATEGORY": "1179412197768695948",
+        "PUBLIC_POINT": 8,
+        "ORIENTATION_POINT": 20,
+        "PROBLEM_POINT": 20,
+        "STAFF_TAKE_POINT": 20,
+        "INVITE_POINT": 70,
+        "TASKS": [
+            {
+                "TYPE": "MESSAGE",
+                "NAME": "Eternal Chat Kanalında Mesaj At",
+                "COUNT": 1000,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "MESSAGE",
+                "NAME": "Eternal Chat Kanalında Mesaj At",
+                "COUNT": 1500,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "MESSAGE",
+                "NAME": "Eternal Chat Kanalında Mesaj At",
+                "COUNT": 2000,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "MESSAGE",
+                "NAME": "Eternal Chat Kanalında Mesaj At",
+                "COUNT": 2500,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "STREAM",
+                "NAME": "Stream Kanallarında Vakit Geçir",
+                "CATEGORY": "1179805041767493794",
+                "ROLE": "1179568363517780038",
+                "INVALID_CHANNELS": ["1182705521573236756", "1179807105876754503"],
+                "COUNT": "30h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "STREAM",
+                "NAME": "Stream Kanallarında Vakit Geçir",
+                "CATEGORY": "1179805041767493794",
+                "ROLE": "1179568363517780038",
+                "INVALID_CHANNELS": ["1182705521573236756", "1179807105876754503"],
+                "COUNT": "35h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "STREAM",
+                "NAME": "Stream Kanallarında Vakit Geçir",
+                "CATEGORY": "1179805041767493794",
+                "ROLE": "1179568363517780038",
+                "INVALID_CHANNELS": ["1182705521573236756", "1179807105876754503"],
+                "COUNT": "40h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "STREAM",
+                "NAME": "Stream Kanallarında Vakit Geçir",
+                "CATEGORY": "1179805041767493794",
+                "ROLE": "1179568363517780038",
+                "INVALID_CHANNELS": ["1182705521573236756", "1179807105876754503"],
+                "COUNT": "45h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "SLEEP",
+                "NAME": "Afk Vakit Geçir",
+                "ROLE": "1179568363517780038",
+                "COUNT": "10h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "SLEEP",
+                "NAME": "Afk Vakit Geçir",
+                "ROLE": "1179568363517780038",
+                "COUNT": "15h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "SLEEP",
+                "NAME": "Afk Vakit Geçir",
+                "ROLE": "1179568363517780038",
+                "COUNT": "20h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "SLEEP",
+                "NAME": "Afk Vakit Geçir",
+                "ROLE": "1179568363517780038",
+                "COUNT": "25h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "PUBLIC",
+                "NAME": "Public Kanallarda Vakit Geçir",
+                "COUNT": "10h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "PUBLIC",
+                "NAME": "Public Kanallarda Vakit Geçir",
+                "COUNT": "15h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "PUBLIC",
+                "NAME": "Public Kanallarda Vakit Geçir",
+                "COUNT": "20h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "PUBLIC",
+                "NAME": "Public Kanallarda Vakit Geçir",
+                "COUNT": "25h",
+                "COUNT_TYPE": "TIME"
+            },
+            {
+                "TYPE": "REGISTER",
+                "NAME": "Kullanıcıları Kaydet",
+                "COUNT": 20,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "REGISTER",
+                "NAME": "Kullanıcıları Kaydet",
+                "COUNT": 25,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "REGISTER",
+                "NAME": "Kullanıcıları Kaydet",
+                "COUNT": 30,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "REGISTER",
+                "NAME": "Kullanıcıları Kaydet",
+                "COUNT": 40,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "PROBLEM",
+                "NAME": "Kullanıcıların Sorununu Çöz",
+                "COUNT": 10,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "PROBLEM",
+                "NAME": "Kullanıcıların Sorununu Çöz",
+                "COUNT": 15,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "PROBLEM",
+                "NAME": "Kullanıcıların Sorununu Çöz",
+                "COUNT": 20,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "PROBLEM",
+                "NAME": "Kullanıcıların Sorununu Çöz",
+                "COUNT": 25,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "STAFF",
+                "NAME": "Sunucuya Yetki Kazandır",
+                "COUNT": 10,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "STAFF",
+                "NAME": "Sunucuya Yetki Kazandır",
+                "COUNT": 15,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "STAFF",
+                "NAME": "Sunucuya Yetki Kazandır",
+                "COUNT": 20,
+                "COUNT_TYPE": "CLASSIC"
+            },
+            {
+                "TYPE": "STAFF",
+                "NAME": "Sunucuya Yetki Kazandır",
+                "COUNT": 25,
+                "COUNT_TYPE": "CLASSIC"
+            }
+        ],
+        "RESPONSIBILITY_CHANNELS": [
+            {
+                "CATEGORY": "1179796434854363167",
+                "INVALID_CHANNELS": ["1182336072093536343"],
+                "ROLE": "1179568339580891176",
+                "POINT": 5
+            },
+            {
+                "CATEGORY": "1180859625998913616",
+                "INVALID_CHANNELS": [],
+                "ROLE": "1181651887238430820",
+                "POINT": 5
+            },
+            {
+                "CATEGORY": "1182837923012419696",
+                "INVALID_CHANNELS": [],
+                "ROLE": "1179568367150047343",
+                "POINT": 5
+            },
+            {
+                "CATEGORY": "1179879314834063500",
+                "INVALID_CHANNELS": ["1180707267524427796"],
+                "ROLE": "1179568324867268608",
+                "POINT": 9
+            },
+            {
+                "CATEGORY": "1182758968624418887",
+                "INVALID_CHANNELS": [],
+                "ROLE": "1179568331242610749",
+                "POINT": 13
+            },
+            {
+                "CATEGORY": "1179805041767493794",
+                "INVALID_CHANNELS": ["1182705521573236756", "1179807105876754503"],
+                "ROLE": "1179568363517780038",
+                "POINT": 7
+            },
+            {
+                "CATEGORY": "1181691431065227284",
+                "INVALID_CHANNELS": [
+                    "1181693474995716186",
+                    "1181693437444100116",
+                    "1181693450823942214",
+                    "1181692389178478703"
+                ],
+                "ROLE": "1180581827124154580",
+                "POINT": 5
+            },
+            {
+                "CATEGORY": "1181691431065227284",
+                "INVALID_CHANNELS": [
+                    "1181693425217704106",
+                    "1181693492997660703",
+                    "1181693508936007720",
+                    "1181692389178478703"
+                ],
+                "ROLE": "1179568347420041406",
+                "POINT": 5
+            }
+        ],
+        "RANKS": [
+            {
+                "ID": "1179554132969934858",
+                "POINT": 5000,
+                "REQUIRED_DAYS": "3d",
+                "REQUIRED_TASKS": 1,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554150351122432"
+            },
+            {
+                "ID": "1179411872965984357",
+                "POINT": 10000,
+                "REQUIRED_DAYS": "5d",
+                "REQUIRED_TASKS": 1,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554150351122432"
+            },
+            {
+                "ID": "1179411875574853692",
+                "POINT": 15000,
+                "REQUIRED_DAYS": "7d",
+                "REQUIRED_TASKS": 2,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554150351122432"
+            },
+            {
+                "ID": "1179152168834564096",
+                "POINT": 20000,
+                "REQUIRED_DAYS": "7d",
+                "REQUIRED_TASKS": 2,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554150351122432"
+            },
+            {
+                "ID": "1179411874513698846",
+                "POINT": 25000,
+                "REQUIRED_DAYS": "8d",
+                "REQUIRED_TASKS": 2,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179411871854510120",
+                "POINT": 30000,
+                "REQUIRED_DAYS": "9d",
+                "REQUIRED_TASKS": 3,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179411870797529218",
+                "POINT": 35000,
+                "REQUIRED_DAYS": "9d",
+                "REQUIRED_TASKS": 3,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179411869845438565",
+                "POINT": 40000,
+                "REQUIRED_DAYS": "10d",
+                "REQUIRED_TASKS": 4,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179411868834615296",
+                "POINT": 45000,
+                "REQUIRED_DAYS": "10d",
+                "REQUIRED_TASKS": 4,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179411867832168478",
+                "POINT": 50000,
+                "REQUIRED_DAYS": "10d",
+                "REQUIRED_TASKS": 4,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179403564196577301",
+                "POINT": 55000,
+                "REQUIRED_DAYS": "15d",
+                "REQUIRED_TASKS": 5,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            },
+            {
+                "ID": "1179554125898330226",
+                "POINT": 60000,
+                "REQUIRED_DAYS": "15d",
+                "REQUIRED_TASKS": 5,
+                "MUST_PUBLIC": true,
+                "EXTRA_ROLE": "1179554153362628669"
+            }
+        ]
+    },
+    "EMOJIS": {
+        "BAR_START_FILL": "1182435893294944358",
+        "BAR_START_EMPTY": "1181642538671685764",
+        "BAR_MID_FILL": "1182435891491393598",
+        "BAR_MID_EMPTY": "1185577509396418571",
+        "BAR_END_FILL": "1182435887313858612",
+        "BAR_END_EMPTY": "1181642535454654584"
+    }
+}

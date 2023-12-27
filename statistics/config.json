@@ -1,0 +1,28 @@
+{
+    "BOT": {
+        "TOKEN": "",
+        "GUILD_ID": "1179030409732964444",
+        "PREFIXES": ["."],
+        "BOT_OWNERS": ["1158378706444767232","1158396365701910588"],
+        "MONGO_URL": "",
+        "STATUS": "Cofteey & Muratva Stark"
+    },
+    "SERVER": {
+        "BOT_COMMAND_ROLE": "1179554150351122432",
+        "UNDERWORLD_ROLE": "1179571587008184361",
+        "QUARANTINE_ROLE": "1179571588014817300",
+        "UNREGISTER_ROLE": "1179411878628306964",
+        "BOOSTER_MAX_POINT": 7,
+        "NORMAL_MAX_POINT": 5,
+        "MESSAGE_LEVEL_ROLES": {
+            "1": ""
+        },
+        "VOICE_LEVEL_ROLES": {
+            "1": ""
+        }
+    },
+    "EMOJIS": {
+        "CAMERA_STAT": "1180836107110318140",
+        "STREAM_STAT": "1180836107110318140"
+    }
+}

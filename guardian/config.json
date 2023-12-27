@@ -1,0 +1,93 @@
+{
+    "BOT": {
+        "MAIN_TOKEN": "",
+        "HELPER_TOKENS": [],
+        "GUILD_ID": "1179030409732964444",
+        "PREFIXES": ["."],
+        "MONGO_URL": "",
+        "STATUS": ""
+    },
+    "SERVER": {
+        "JAIL_ROLE": "",
+        "ROLE_PERMISSIONS": [
+            { "ID": "1179030409732964444", "PERMISSIONS": 1 },
+            { "ID": "1179388067648380968", "PERMISSIONS": 36768768 },
+            { "ID": "1179388069007343637", "PERMISSIONS": 36768768 },
+            { "ID": "1179403561747095552", "PERMISSIONS": 66513474158293 },
+            { "ID": "1179411878628306964", "PERMISSIONS": 35717120 },
+            { "ID": "1179554128347803669", "PERMISSIONS": 234359937 },
+            { "ID": "1179554144130969713", "PERMISSIONS": 88648359734993 },
+            { "ID": "1179554150351122432", "PERMISSIONS": 1152 },
+            { "ID": "1179554153362628669", "PERMISSIONS": 5768321 },
+            { "ID": "1179568324867268608", "PERMISSIONS": 128 },
+            { "ID": "1182155925352620144", "PERMISSIONS": 311360 },
+            { "ID": "1183448040737099969", "PERMISSIONS": 512 }
+        ],
+        "SAFES": [
+            {
+                "ID": "1179030512573091930",
+                "ADMIN": true  
+            },
+            {
+                "ID": "1104154109982031942",
+                "ADMIN": true  
+            },
+            {
+                "ID": "290195858748866560",
+                "ADMIN": true  
+            },
+            {
+                "ID": "532955715418062848",
+                "ADMIN": true
+            },
+            { "ID": "584167124067418112", "ADMIN": true },
+            { "ID": "546324454586974218", "ADMIN": true },
+            { "ID": "693107836858662953", "ADMIN": true },
+            { "ID": "1042443924112953365", "ADMIN": true },
+            { "ID": "281860916247658507", "ADMIN": true },
+            { "ID": "321719856011542530", "ADMIN": true },
+            { "ID": "1098664204682149988", "ADMIN": true },
+            { "ID": "461939184303865876", "ADMIN": true},
+            {
+                "ID": "1179403561747095552",
+                "ADMIN": false,
+                "CHANNEL_LIMIT": {
+                    "COUNT": 3,
+                    "TIME": "5m"
+                },
+                "BAN_KICK_LIMIT": {
+                    "COUNT": 5,
+                    "TIME": "5m"
+                },
+                "MEMBER_ROLE_LIMIT": {
+                    "COUNT": 2,
+                    "TIME": "5m"
+                },
+                "ROLE_LIMIT": {
+                    "COUNT": 3,
+                    "TIME": "5m"
+                }
+            },
+            {
+                "ID": "1179554144130969713",
+                "ADMIN": false,
+                "CHANNEL_LIMIT": {
+                    "COUNT": 0,
+                    "TIME": "5m"
+                },
+                "BAN_KICK_LIMIT": {
+                    "COUNT": 2,
+                    "TIME": "5m"
+                },
+                "MEMBER_ROLE_LIMIT": {
+                    "COUNT": 1,
+                    "TIME": "5m"
+                },
+                "ROLE_LIMIT": {
+                    "COUNT": 0,
+                    "TIME": "5m"
+                }
+            }
+        ]
+    }
+}

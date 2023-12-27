@@ -1,0 +1,23 @@
+{
+    "ts-node": {
+        "require": ["tsconfig-paths/register"]
+    },
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ESNext",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "baseUrl": ".",
+        "typeRoots": ["node_modules/@types", "src/@types"],
+        "paths": {
+            "@/base": ["src/base/index.ts"],
+            "@/models": ["src/models/index.ts"],
+            "@/managers": ["src/managers/index.ts"],
+            "@/enums": ["src/enums/index.ts"],
+            "@/types": ["src/@types/index.ts"]
+        }
+    },
+    "include": ["src/**/*"]
+}

@@ -1,0 +1,24 @@
+{
+    "name": "moderation",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "dev": "nodemon src/index.ts",
+        "format": "prettier --write ."
+    },
+    "devDependencies": {
+        "@types/ms": "^0.7.31",
+        "@types/node": "^20.4.2",
+        "nodemon": "^3.0.1",
+        "prettier": "^3.0.0",
+        "ts-node": "^10.9.1",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "@discordjs/voice": "^0.16.1",
+        "canvas": "^2.11.2",
+        "discord.js": "^14.12.1",
+        "mongoose": "^7.3.4"
+    }
+}
