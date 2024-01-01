@@ -1,6 +1,6 @@
-## Show your support
+## ⭐️ Show your support
 
-Give a ⭐️ if this project helped you!
+Give a star if this project helped you!
 
 ## 🍭 Images From Bot
 
