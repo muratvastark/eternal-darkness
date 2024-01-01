@@ -2,7 +2,7 @@
 
 Give a ⭐️ if this project helped you!
 
-## 🍭 EXAMPLES
+## 🍭 Images From Bot
 
 | Top Command (General) | Point Command | Stat Command | Take Task Command (No Take) |
 | ----- | ----- | ----- | ----- |
