@@ -1,8 +1,7 @@
 ## 🍭 EXAMPLES
 
-| Commands | Commands |
+| Top Command (General) | Point Command |
 | ----------------- | ----- |
-| Top Command (General)  | Point Command |
 | <img src="./images/general-top-command.png" />  | <img src="./images/point-command.png" />  |
 | Stat Command | Take Task Command (No Take) |
 | <img src="./images/stat-command.png" /> | <img src="./images/take-task-command.png" /> |
