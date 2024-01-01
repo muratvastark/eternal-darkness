@@ -1,6 +1,6 @@
-# 🍭 EXAMPLES
+## 🍭 EXAMPLES
 
-|               |  |
+| Commands | Commands |
 | ----------------- | ----- |
 | Top Command (General)  | Point Command |
 | <img src="./images/general-top-command.png" />  | <img src="./images/point-command.png" />  |
