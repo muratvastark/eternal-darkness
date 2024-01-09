@@ -8,6 +8,7 @@ const titlesAndKeys = {
     voices: 'Ses Sıralama',
     cameras: 'Kamera Sıralama',
     streams: 'Yayın Sıralama',
+    invites: 'Davet Sıralama',
 };
 
 const Top: ICommand = {
