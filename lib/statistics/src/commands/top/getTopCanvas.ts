@@ -9,6 +9,7 @@ const titles = {
     messages: 'En Fazla Mesaj Atan Kullanıcılar',
     streams: 'En Fazla Yayın Açan Kullanıcılar',
     cameras: 'En Fazla Kamera Açan Kullanıcılar',
+    invites: 'En Fazla Davet Yapan Kullanıcılar',
 };
 
 const specialColors = {
