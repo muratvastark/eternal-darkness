@@ -5,19 +5,20 @@ import getTopCanvas from './getTopCanvas';
 
 async function getPagination(client: Client, question: Message, type: string, authorId: string) {
     const totalData = Math.floor((await UserModel.countDocuments({ [type]: { $exists: true } })) / 10);
+    const totalQuery = type === "invites" ?  "$normalInvites" : {
+        $reduce: {
+            input: { $objectToArray: `$${type}` },
+            initialValue: 0,
+            in: {
+                $add: ["$$value", "$$this.v.total"]
+            },  
+        },
+    };
     const datas = await UserModel.aggregate([
         {
             $project: {
                 id: '$id',
-                total: {
-                    $reduce: {
-                        input: { $objectToArray: `$${type}` },
-                        initialValue: 0,
-                        in: {
-                            $add: ["$$value", "$$this.v.total"]
-                        },  
-                    },
-                },
+                total: totalQuery,
             },
         },
         { $sort: { total: -1 } },
@@ -48,16 +49,9 @@ async function getPagination(client: Client, question: Message, type: string, au
 
         const newDatas = await UserModel.aggregate([
             {
-                $addFields: {
-                    total: {
-                        $reduce: {
-                            input: { $objectToArray: `$${type}` },
-                            initialValue: 0,
-                            in: {
-                                $sum: '$$this.v.total',
-                            },
-                        },
-                    },
+                $project: {
+                    id: '$id',
+                    total: totalQuery,
                 },
             },
             { $sort: { total: -1 } },

@@ -33,7 +33,7 @@ export default async function getTopCanvas(client: Client, type: string, datas: 
         const newIndex = 5 > i ? i : i - 5;
         const user = await MemberManager.getUser(client, data.id);
         const avatar = await loadImage(user.displayAvatarURL({ size: 4096, extension: 'png' }));
-        const valueString = type === 'messages' ? `${data.total} mesaj` : client.utils.numberToString(data.total);
+        const valueString = ['messages', 'invites'].includes(type) ? `${data.total} ${type === "messages" ? "mesaj" : "davet"}` : client.utils.numberToString(data.total);
 
         canvas.setTextAlign('left');
 
