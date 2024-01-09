@@ -4,6 +4,7 @@ import { PenalModel } from '@/models';
 import { IPenal } from '@/types';
 import { EmbedBuilder, Guild, GuildMember, TextChannel, codeBlock, inlineCode } from 'discord.js';
 import { MemberManager } from './MemberManager';
+import { Document } from 'mongoose';
 
 export class PenalManager {
     static checkBannedTag(client: Client, member: GuildMember) {
@@ -51,10 +52,17 @@ export class PenalManager {
         return false;
     }
 
-    static async unVoiceMute(client: Client, member: GuildMember) {
-        if (member.roles.cache.has(client.config.SERVER.VOICE_MUTE_ROLE))
-            await member.roles.remove(client.config.SERVER.VOICE_MUTE_ROLE);
-        if (member.voice.channelId && member.voice.serverMute) await member.voice.setMute(false);
+    static async unVoiceMute(client: Client, member: GuildMember, penal: Document<unknown, any, IPenal> & IPenal) {
+        if (member.voice.channelId && member.voice.channel.parentId === '1106946127305130116') return;
+
+        penal.activity = false;
+
+        let completed = true;
+        if (member.voice.channelId) await member.voice.setMute(false);
+        else completed = false;
+        penal.completed = completed;
+
+        penal.save();
 
         const channel = member.guild.channels.cache.find((c) => c.name === 'mute-log') as TextChannel;
         if (!channel) return;
@@ -63,9 +71,11 @@ export class PenalManager {
             embeds: [
                 new EmbedBuilder({
                     color: client.utils.getRandomColor(),
-                    description: `${member} (${inlineCode(
-                        member.id,
-                    )}) adlı kullanıcının ceza süresi dolduğu için kaldırıldı.`,
+                    description: penal.completed
+                        ? `${member} (${inlineCode(member.id)}) adlı kullanıcının ceza süresi dolduğu için kaldırıldı.`
+                        : `${member} (${inlineCode(
+                              member.id,
+                          )}) adlı kullanıcının cezası kaldırılamadı sese girdiğinde kaldırılacak.`,
                 }),
             ],
         });
@@ -115,6 +125,31 @@ export class PenalManager {
         });
     }
 
+    static async unAds(client: Client, member: GuildMember, penal: IPenal) {
+        const hasBannedTag = PenalManager.checkBannedTag(client, member);
+        if (!hasBannedTag) {
+            if (!penal.roles || !penal.roles.length)
+                MemberManager.setRoles(member, client.config.SERVER.UNREGISTER_ROLE);
+            else MemberManager.setRoles(member, penal.roles);
+        }
+
+        const channel = member.guild.channels.cache.find((c) => c.name === 'ads-log') as TextChannel;
+        if (!channel) return;
+
+        channel.send({
+            embeds: [
+                new EmbedBuilder({
+                    color: client.utils.getRandomColor(),
+                    description: `${member} (${inlineCode(
+                        member.id,
+                    )}) adlı kullanıcının ceza süresi dolduğu için kaldırıldı. ${
+                        hasBannedTag ? 'Fakat yasaklı tag bulundurduğu için yasaklı tag rolü verildi.' : ''
+                    }`,
+                }),
+            ],
+        });
+    }
+
     static unQuarantine(client: Client, member: GuildMember, penal: IPenal) {
         const hasBannedTag = PenalManager.checkBannedTag(client, member);
         if (!hasBannedTag) {
@@ -140,6 +175,24 @@ export class PenalManager {
         });
     }
 
+    static async unAnotherPunishment(client: Client, member: GuildMember, roleId: string, channelId: string) {
+        if (member.roles.cache.has(roleId)) await member.roles.remove(roleId);
+
+        const channel = member.guild.channels.cache.get(channelId) as TextChannel;
+        if (!channel) return;
+
+        channel.send({
+            embeds: [
+                new EmbedBuilder({
+                    color: client.utils.getRandomColor(),
+                    description: `${member} (${inlineCode(
+                        member.id,
+                    )}) adlı kullanıcının ceza süresi dolduğu için kaldırıldı.`,
+                }),
+            ],
+        });
+    }
+
     static async checkPenals(client: Client, guild: Guild) {
         const now = Date.now();
         const penals = await PenalModel.find({
@@ -149,16 +202,36 @@ export class PenalManager {
             visible: true,
         });
         for (const penal of penals) {
-            penal.activity = false;
-            penal.save();
-
             const member = await MemberManager.getMember(guild, penal.user);
             if (!member) continue;
 
-            if (penal.type === PenalFlags.VoiceMute) PenalManager.unVoiceMute(client, member);
+            if (penal.type === PenalFlags.VoiceMute) {
+                PenalManager.unVoiceMute(client, member, penal);
+                continue;
+            }
+
             if (penal.type === PenalFlags.ChatMute) PenalManager.unChatMute(client, member);
             if (penal.type === PenalFlags.Quarantine) PenalManager.unQuarantine(client, member, penal);
+            if (penal.type === PenalFlags.Ads) PenalManager.unAds(client, member, penal);
             if (penal.type === PenalFlags.Underworld) PenalManager.unUnderworld(client, member, penal);
+
+            if (
+                ![
+                    PenalFlags.Ads,
+                    PenalFlags.Underworld,
+                    PenalFlags.VoiceMute,
+                    PenalFlags.ChatMute,
+                    PenalFlags.Quarantine,
+                ].includes(penal.type)
+            ) {
+                const punishment = client.config.SERVER.PUNISMENT_COMMANDS.find((c) => c.TYPE === penal.type);
+                if (!punishment) continue;
+
+                PenalManager.unAnotherPunishment(client, member, punishment.ROLE, punishment.CHANNEL);
+            }
+
+            penal.activity = false;
+            penal.save();
         }
     }
 }
