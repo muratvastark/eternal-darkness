@@ -4,11 +4,13 @@ Give a star if this project helped you!
 
 ## 🍭 Images From Bot
 
-| Top Command (General) | Point Command | Stat Command | Take Task Command (No Take) |
-| ----- | ----- | ----- | ----- |
-| <img src="./images/general-top-command.png" />  | <img src="./images/point-command.png" /> | <img src="./images/stat-command.png" /> | <img src="./images/take-task-command.png" /> |
-| Take Task Command (Taked) | Task Command | Top Command (Spesific)  | Weekly Stat Command |
-| <img src="./images/taked-task-command.png" /> | <img src="./images/task-command.png" /> | <img src="./images/top-spesific-command.png" /> | <img src="./images/weekly-command.png" /> |
+| Top Command (General)                            | Point Command                                  | Stat Command                                    | Take Task Command (No Take)                  |
+| ------------------------------------------------ | ---------------------------------------------- | ----------------------------------------------- | -------------------------------------------- |
+| <img src="./images/general-top-command.png" />   | <img src="./images/point-command.png" />       | <img src="./images/stat-command.png" />         | <img src="./images/take-task-command.png" /> |
+| Take Task Command (Taked)                        | Task Command                                   | Top Command (Spesific)                          | Weekly Stat Command                          |
+| <img src="./images/taked-task-command.png" />    | <img src="./images/task-command.png" />        | <img src="./images/top-spesific-command.png" /> | <img src="./images/weekly-command.png" />    |
+| Message Level Command                            | Voice Level Command                            | Ship                                            | Streamer Menu                                |
+| <img src="./images/message-level-command.png" /> | <img src="./images/voice-level-command.png" /> | <img src="./images/ship-command.png" />         | <img src="./images/streamer-menu.png" />     |
 
 ## 🐻‍❄️ Author & Lisence
 

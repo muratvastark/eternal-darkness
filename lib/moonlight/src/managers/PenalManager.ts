@@ -54,7 +54,7 @@ export class PenalManager {
     static async unVoiceMute(client: Client, member: GuildMember) {
         if (member.roles.cache.has(client.config.SERVER.VOICE_MUTE_ROLE))
             await member.roles.remove(client.config.SERVER.VOICE_MUTE_ROLE);
-        if (member.voice.channelId && member.voice.selfMute) await member.voice.setMute(false);
+        if (member.voice.channelId && member.voice.serverMute) await member.voice.setMute(false);
 
         const channel = member.guild.channels.cache.find((c) => c.name === 'mute-log') as TextChannel;
         if (!channel) return;
