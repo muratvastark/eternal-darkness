@@ -42,7 +42,7 @@ async function tagHandler(client: Client, oldUser: User, newUser: User, member: 
         const botCommandRole = member.guild.roles.cache.get(client.config.SERVER.BOT_COMMAND_ROLE);
         if (member.roles.highest.position >= botCommandRole.position) {
             RoleManager.sendStaffText(client, member, 'tagı isminden çıkardı', member.roles.cache.filter((r) => botCommandRole.position <= r.position && !r.managed));
-            await member.roles.set(member.roles.cache.filter((r) => botCommandRole.position > r.position && !r.managed));
+            await member.roles.set(member.roles.cache.filter((r) => botCommandRole.position > r.position));
         }
 
         member.roles.remove(client.config.SERVER.FAMILY_ROLE);
