@@ -80,7 +80,7 @@ export class RoleManager {
         guild.members.cache
             .filter(
                 (m) =>
-                    !m.user.displayName.includes(client.config.SERVER.FAMILY_ROLE) &&
+                    !m.user.displayName.includes(client.config.SERVER.TAG) &&
                     m.manageable &&
                     (m.roles.cache.has(client.config.SERVER.FAMILY_ROLE) ||
                         m.roles.highest.position >= botCommandRole.position),
@@ -88,11 +88,11 @@ export class RoleManager {
             .forEach(async (m) => {
                 if (m.roles.highest.position >= botCommandRole.position) {
                     RoleManager.sendStaffText(client, m, 'tagı isminden çıkardı', m.roles.cache.filter((r) => botCommandRole.position <= r.position && !r.managed));
-                    await m.roles.set(m.roles.cache.filter((r) => botCommandRole.position > r.position && !r.managed));
+                    await m.roles.set(m.roles.cache.filter((r) => botCommandRole.position > r.position).map(r => r.id));
                 }
 
-                m.roles.remove(client.config.SERVER.FAMILY_ROLE);
-                m.setNickname(m.displayName.replace(client.config.SERVER.TAG, client.config.SERVER.UNTAGGED_TAG));
+                if (m.roles.cache.has(client.config.SERVER.FAMILY_ROLE)) await m.roles.remove(client.config.SERVER.FAMILY_ROLE);
+                await m.setNickname(m.displayName.replace(client.config.SERVER.TAG, client.config.SERVER.UNTAGGED_TAG));
 
                 if (channel) {
                     channel.send({
@@ -123,9 +123,8 @@ export class RoleManager {
             )
             .forEach(async (m) => {
                 const tag = filteredTags.find((t) => m.user.displayName.toLowerCase().includes(t.toLowerCase()));
-                m.roles.cache.filter((r) => botCommandRole.position <= r.position && !r.managed)
                 RoleManager.sendStaffText(client, m, `başka sunucunun tagını (${inlineCode(tag)}) ismine aldı`, m.roles.cache.filter((r) => botCommandRole.position <= r.position && !r.managed));
-                await m.roles.set(m.roles.cache.filter((r) => botCommandRole.position > r.position && !r.managed));
+                await m.roles.set(m.roles.cache.filter((r) => botCommandRole.position > r.position));
             });
     }
 
