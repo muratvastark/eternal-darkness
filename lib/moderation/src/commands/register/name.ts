@@ -73,7 +73,7 @@ const Name: ICommand = {
         message.channel.send({
             embeds: [
                 new EmbedBuilder({
-                    description: `${member} üyesinin ismi başarıyla ${bold(`${name} | ${age}`)} değiştirildi.`,
+                    description: `${member} üyesinin ismi başarıyla ${bold(`${name} | ${age}`)} şeklinde değiştirildi.`,
                 }),
             ],
         });
