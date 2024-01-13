@@ -17,7 +17,7 @@ function botCommandHandler(client: Client, message: Message, prefix: string) {
         ].some((role) => message.member.roles.cache.has(role)) &&
             !hasAdministrator) ||
         (command.usableAuth &&
-            !command.usableAuth.some((r) => !message.member.roles.cache.has(r)) &&
+            !command.usableAuth.some((r) => message.member.roles.cache.has(r)) &&
             !hasAdministrator) ||
         (command.usableChannels && !command.usableChannels.includes(message.channelId) && !hasAdministrator) ||
         (message.channelId !== "1179791329748860968" && !hasAdministrator)
