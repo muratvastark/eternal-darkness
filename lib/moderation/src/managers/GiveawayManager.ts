@@ -58,7 +58,7 @@ export class GiveawayManager {
 
             if (now >= giveaway.endTimestamp) {
 
-                const document = await GiveawayModel.findOne({ messageId: giveaway.messageId });
+                const document = await GiveawayModel.findOneAndRemove({ messageId: giveaway.messageId });
                 if (!document) continue;
 
                 const message = await (guild.channels.cache.get(giveaway.channelId) as TextChannel).messages.fetch(
