@@ -35,11 +35,6 @@ interface IName {
     timestamp: number;
 }
 
-interface IMention {
-    user: string;
-    timestamp: number;
-}
-
 interface IWarn {
     reason: string;
     admin: string;
