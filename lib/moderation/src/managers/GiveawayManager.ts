@@ -111,7 +111,6 @@ export class GiveawayManager {
                     components: [giveawayButtonRow],
                 });
 
-                await GiveawayModel.deleteOne({ messageId: giveaway.messageId });
                 GiveawayManager.giveaways = GiveawayManager.giveaways.filter((g) => g.messageId !== giveaway.messageId);
             }
         }
