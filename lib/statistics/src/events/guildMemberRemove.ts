@@ -11,7 +11,7 @@ const GuildMemberRemove: IEvent<Events.GuildMemberRemove> = {
 
         const memberData = await UserModel.findOne({ id: member.id });
         if (!memberData || !memberData.inviter) {
-            logChannel.send({
+            if (logChannel) logChannel.send({
                 content: `${member} üyesi sunucumuzdan ayrıldı. ${bold('ÖZEL URL')} tarafından davet edilmişti.`,
             });
             return;
@@ -19,7 +19,7 @@ const GuildMemberRemove: IEvent<Events.GuildMemberRemove> = {
 
         const inviterData = await UserModel.findOne({ id: memberData.inviter });
         if (!inviterData) {
-            logChannel.send({
+            if (logChannel) logChannel.send({
                 content: `${member} üyesi sunucumuzdan ayrıldı. Kim tarafından davet edildiği bulunamadı.`,
             });
             return;
@@ -34,7 +34,7 @@ const GuildMemberRemove: IEvent<Events.GuildMemberRemove> = {
         inviterData.leaveInvites += 1;
         inviterData.markModified('leaveInvites normalInvites');
         inviterData.save();
-        logChannel.send({
+        if (logChannel) logChannel.send({
             content: `${member} üyesi sunucumuzdan ayrıldı. ${inlineCode(
                 inviter.username,
             )} tarafından davet edilmişti bu kişinin toplam (${bold(`${inviterData.normalInvites}`)}) daveti oldu.`,
