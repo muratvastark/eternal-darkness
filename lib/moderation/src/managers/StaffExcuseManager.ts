@@ -1,5 +1,5 @@
 import { StaffExcuseModel } from "@/models";
-import { Guild, TextChannel, EmbedBuilder, Colors, userMention } from 'discord.js';
+import { Guild, TextChannel, EmbedBuilder, Colors, userMention, time } from 'discord.js';
 
 export class StaffExcuseManager {
     static excuses: { staffId: string; finishTimestamp: number }[] = [];
@@ -19,7 +19,12 @@ export class StaffExcuseManager {
         for (const finishedExcuse of finishedExcuses) {
             channel.send({
                 embeds: [
-                    embed.setDescription(`${userMention(finishedExcuse.staffId)} adlı yetkilinin mazereti bitti.\nMazeret Sebebi: ${finishedExcuse.reason}`)
+                    embed.setDescription([
+                        `${userMention(finishedExcuse.staffId)} adlı yetkilinin mazereti bitti.\n`,
+                        `Mazeret Başlangıç: ${time(Math.floor(finishedExcuse.createdTimestamp / 1000), "R")} (${time(Math.floor(finishedExcuse.createdTimestamp / 1000), "f")})`,
+                        `Mazeret Bitiş: ${time(Math.floor(finishedExcuse.finishTimestamp / 1000), "R")} (${time(Math.floor(finishedExcuse.finishTimestamp / 1000), "f")})`,
+                        `Mazeret Sebebi: ${finishedExcuse.reason}`
+                    ].join("\n"))
                 ]
             });
 
