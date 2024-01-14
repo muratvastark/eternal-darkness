@@ -9,7 +9,6 @@ const GuildMemberAdd: IEvent<Events.GuildMemberAdd> = {
         if (member.user.bot) return;
 
         const logChannel = member.guild.channels.cache.find((c) => c.name === 'invite-log') as TextChannel;
-
         const invites = await member.guild.invites.fetch();
         const notHasInvite = StatManager.invites.find((i) => !invites.has(i.code));
         const invite =
@@ -17,7 +16,7 @@ const GuildMemberAdd: IEvent<Events.GuildMemberAdd> = {
             notHasInvite;
         const isSuspect = 1000 * 60 * 60 * 24 * 7 >= Date.now() - member.user.createdTimestamp;
         if (!invite || !invite.inviter) {
-            logChannel.send(`${member} üyesi sunucumuza ${bold('ÖZEL URL')} tarafından davet edildi.`);
+            if (logChannel) logChannel.send(`${member} üyesi sunucumuza ${bold('ÖZEL URL')} tarafından davet edildi.`);
             return;
         }
 
@@ -31,7 +30,7 @@ const GuildMemberAdd: IEvent<Events.GuildMemberAdd> = {
             { $inc: { normalInvites: isSuspect ? 0 : 1 } },
             { upsert: true, new: true },
         );
-        logChannel.send({
+        if (logChannel) logChannel.send({
             content: `${member} üyesi sunucumuza katıldı. ${inlineCode(
                 invite.inviter.username,
             )} tarafından davet edildi, ve bu kişinin toplam davet sayısı (${bold(`${document.normalInvites}`)}) oldu ${
