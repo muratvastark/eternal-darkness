@@ -4,3 +4,4 @@ export * from './special-command';
 export * from './stream-model';
 export * from './moderation';
 export * from './giveaway-model';
+export * from './staff-excuse-model';
