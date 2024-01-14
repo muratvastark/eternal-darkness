@@ -12,7 +12,7 @@ export class StaffExcuseManager {
     static async checkExcuses(guild: Guild) {
         const finishedExcuses = await StaffExcuseModel.find({
             finishTimestamp: { $lte: Date.now() },
-            activity: false
+            activity: true
         });
         const embed = new EmbedBuilder({ color: Colors.Red });
         const channel = guild.channels.cache.find(c => c.name === "mazeret") as TextChannel;
