@@ -1,4 +1,4 @@
-## [VERSION 1]([https://github.com/muratva-bots](https://github.com/orgs/muratva-bots/repositories))
+## [VERSION 1](https://github.com/orgs/muratva-bots/repositories)
 
 ## ⭐️ Show your support
 
