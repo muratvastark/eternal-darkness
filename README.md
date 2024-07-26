@@ -16,6 +16,6 @@ Give a star if this project helped you!
 
 ## 🐻‍❄️ Author & Lisence
 
-[![Discord Presence](https://lanyard.cnrad.dev/api/1158396365701910588?hideActivity=true)](https://discord.com/users/1158396365701910588)
+[![Discord Presence](https://lanyard.cnrad.dev/api/595205909731344394?hideActivity=true)](https://discord.com/users/595205909731344394)
 
 Copyright © 2023 [Muratva Stark](https://github.com/muratvastark). This project is [Apache 2.0](https://github.com/muratvastark/eternal-darkness/blob/main/LICENSE) licensed.
